@@ -189,3 +189,136 @@ header{
         padding: 3rem 0;
     }
 }
+
+/* Chicken Wings Section */
+
+.chicken { 
+    background: url("../img/chicken-wing-bg-black.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+
+    .chicken-wrapper{
+        display: flex;
+        align-items: center;
+        height: 800px;
+        /* border: 1px rgb(0, 255, 34) solid; */
+
+        .chicken-box{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            /* border: 1px red solid; */
+
+            .chicken-img{
+                img{
+                    width: 100%;
+                }
+            }
+
+            .chicken-info{
+                max-width: 580px;
+                width: 100%;
+                color: var(--white);
+                padding: 1rem;
+
+                h2{
+                    font-size: clamp(2rem, 10vw, 3.625rem);
+                    text-transform: uppercase;
+                }
+
+                p{
+                    font-size: clamp(2rem, 10vw, 1.5rem);
+                }
+
+                .chicken-btn{
+                    background-color: var(--yellow);
+                    color: var(--black);
+                    max-width: 20rem;
+                    width: 100%;
+                    height: 4rem;
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    font-weight: bold;
+                    border-radius: 0.3rem;
+                    margin-top: 3.75rem;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px){
+        height: auto;
+        
+        .chicken-wrapper{
+            height: auto;
+
+            .chicken-box{
+                padding: 3rem 0;
+                flex-direction: column;
+            }
+        }
+    }
+    
+}
+
+/* Stats-Section */
+
+.stats {
+    background: url("../img/stats-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--black);
+    height: 800px;
+    overflow: hidden;
+
+    .stats-title{
+        text-align: center;
+        margin-top: 4rem;
+
+        h2{
+            font-size: clamp(2rem, 10vw, 3.625rem);
+            text-transform: uppercase;
+        }
+
+        p{
+            font-size: clamp(2rem, 10vw, 1.5rem);
+        }
+    }
+
+    .stats-grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+        gap: 5rem;
+        text-align: center;
+        margin-top: 4rem;
+
+        .stats-grid-items{
+            border: 10px solid var(--black);
+            border-radius: 10px;
+            padding: 8rem 0;
+            margin-top: 3rem;
+
+            h3{
+                font-size: clamp(2rem, 10vw, 4rem);
+                text-transform: uppercase;
+            }
+
+            p{
+                font-size: clamp(2rem, 10vw, 2rem);
+                font-weight: bold;
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px){
+        height: auto;
+        padding: 3rem 3rem;
+    }
+
+}
+    
