@@ -321,4 +321,179 @@ header{
     }
 
 }
+
+/* Satay-section */
+
+.satay{
+    background: url(../img/chicken-satay-bg-black.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    color: var(--white);
+
+    .satay-wrapper{
+        display: flex;
+        align-items: center;
+        height: 800px;
+
+        .satay-box{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+
+            .satay-info{
+                /* border: 2px green solid; */
+                max-width: 580px;
+                width: 100%;
+                padding: 1rem;
+
+                h3{
+                    font-size: clamp(2rem, 10vw, 3.625rem);
+                    text-transform: uppercase;
+                }
+
+                p{
+                    font-size: clamp(2rem, 10vw, 1.5rem);
+                    margin-top: 2rem;
+                }
+
+                .satay-btn{
+                    background-color: var(--yellow);
+                    color: var(--black);
+                    max-width: 20rem;
+                    width: 100%;
+                    height: 4rem;
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    font-weight: bold;
+                    border-radius: 0.3rem;
+                    margin-top: 3.75rem;
+                }
+            }
+
+            .satay-img{
+                /* border: 2px red solid; */
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        height: auto;
+
+        .satay-wrapper{
+            height: auto;
+
+            .satay-box{
+                flex-direction: column;
+                align-items: start;
+                padding-top: 3rem;
+                padding-bottom: 3rem;
+                padding-left: 3rem;
+            }
+        }
+    }
+}
+
+/* chef-section */
+
+.chef{
+    height: 800px;
+    background: url(../img/chef-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .chef-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 800px;
+        text-align: center;
+
+        .chef-info{
+
+            img{
+                max-width: 248px;
+                width: 100%;
+            }
+
+            p{
+                font-size: clamp(1rem,10vw,2.3rem);
+                margin-top: 3rem;
+            }
+
+            h3{
+                font-size: clamp(1rem, 10vw, 2.8rem);
+            }
+        }
+    }
+}
     
+
+/* update-section */
+.update{
+    height: 800px;
+    background: url(../img/update-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: red 1px solid;
+
+    .update-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 800px;
+        color: var(--black);
+        border: red 1px solid;
+
+        .update-box{
+            border: red 1px solid;
+            text-align: center;
+
+            h3{
+                font-size: clamp(1rem,10vw,3.75rem);
+                text-transform: uppercase;
+            }
+
+            p{
+                font-size: clamp(1rem,10vw,1.875rem);
+                margin: 3rem 0;
+            }
+
+            form{
+                display: flex;
+                justify-content: center;
+                margin: 1rem;
+                
+
+                input{
+                    max-width: 550px;
+                    width: 100%;
+                    padding: 1rem;
+                    border: none;
+                    outline: none;
+                    font-size: clamp(1rem,10vw,1.875rem);
+                }
+
+                button{
+                    max-width: 222px;
+                    width: 100%;
+                    padding: 1rem;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                    background-color: var(--black);
+                    color: var(--white);
+                    font-weight: bold;
+                    font-size: clamp(1rem,10vw,1.875rem);
+                }
+            }
+        }
+    }
+}
