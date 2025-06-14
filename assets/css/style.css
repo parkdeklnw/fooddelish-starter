@@ -433,6 +433,14 @@ header{
             }
         }
     }
+
+    @media screen and (max-width: 768px){
+        height: auto;
+
+        .chef-wrapper{
+            height: auto;
+        }
+    }
 }
     
 
@@ -442,7 +450,7 @@ header{
     background: url(../img/update-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
-    border: red 1px solid;
+    /* border: red 1px solid; */
 
     .update-wrapper{
         display: flex;
@@ -450,10 +458,10 @@ header{
         align-items: center;
         height: 800px;
         color: var(--black);
-        border: red 1px solid;
+        /* border: red 1px solid; */
 
         .update-box{
-            border: red 1px solid;
+            /* border: red 1px solid; */
             text-align: center;
 
             h3{
@@ -494,6 +502,71 @@ header{
                     font-size: clamp(1rem,10vw,1.875rem);
                 }
             }
+        }
+    }
+}
+
+/* footer */
+
+footer{
+    height: 800px;
+    background-color: var(--black);
+
+    .footer-wrapper{
+        height: 800px;
+        display: flex;
+        align-items: center;
+
+        .footer-grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+            gap: 3rem;
+            color: var(--white);
+            width: 100%;
+
+
+            .footer-grid-items{
+                margin: 1rem;
+
+                h4{
+                    font-size: clamp(1rem, 10vw, 2rem);
+                    margin-bottom: 1rem;
+                    font-weight: 300;
+                }
+
+                a{
+                    color: var(--white);
+                    text-decoration: none;
+                }
+
+                ul{
+                    list-style: none;
+                    
+                    li{
+                        margin-top: 1rem;
+                    }
+                }
+
+                &:nth-child(1){
+                    ul{
+                        display: flex;
+
+                        li{
+                            margin-top: 1rem;
+                            margin-right: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px){
+        height: auto;
+        padding: 3rem 0;
+
+        .footer-wrapper{
+            height: auto;
         }
     }
 }
